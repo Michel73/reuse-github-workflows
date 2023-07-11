@@ -1,7 +1,7 @@
 name: reuse
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   demo:
