@@ -13,6 +13,8 @@ jobs:
     uses: ./.github/workflows/forreuse.yml
 
   post-demo:
+    needs:
+      - demo
     name: Run post steps after reusing another workflow
     runs-on: ubuntu-latest
     steps:
