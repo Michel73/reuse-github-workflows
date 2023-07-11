@@ -1,0 +1,13 @@
+name: reuse
+
+on:
+  workflow_call:
+
+jobs:
+  demo:
+    name: This job is intended to reuse another workflow.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Reuse
+        uses: ./for-reuse.yml

@@ -1,0 +1,13 @@
+name: forreuse
+
+on:
+  workflow_call:
+
+jobs:
+  demo:
+    name: This job is intended for reuse.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello"
