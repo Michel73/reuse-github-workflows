@@ -1,7 +1,6 @@
 name: reuse
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - "**"
